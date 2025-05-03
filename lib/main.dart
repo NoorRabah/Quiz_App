@@ -19,7 +19,6 @@ class QuizApp extends StatelessWidget {
         '/': (context) => const OnBoardingPage(),
         '/home': (context) => const HomePage(),
       },
-      // home: const OnBoardingPage(), //? screen or page
     );
   }
 }
