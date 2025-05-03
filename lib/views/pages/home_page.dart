@@ -8,20 +8,21 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        width: double.infinity,
         height: double.infinity,
+        width: double.infinity,
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFF927AFF),
-              Color(0xFFAF7EE7),
+              Color(0xffAF7EE7),
               Color(0xff272052),
             ],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
+            begin: Alignment.topRight,
+            end: Alignment.bottomLeft,
           ),
         ),
-        child: const HomePageBody(),
+        child: const SafeArea(
+          child: HomePageBody(),
+        ),
       ),
     );
   }
